@@ -1,4 +1,4 @@
-package com.accarda.panicPoc.application;
+package com.accarda.panicPoc.vaadin;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;

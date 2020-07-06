@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c1f9fcb-3a57-495c-b28a-b5b2c7173065" name="Default Changelist" comment="Design overview Word">
+    <list default="true" id="1c1f9fcb-3a57-495c-b28a-b5b2c7173065" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/application/MyCommandlineRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/vaadin/MyCommandlineRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common" beforeDir="false" afterPath="$PROJECT_DIR$/common" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vaadin/src/main/java/com/accarda/panicPoc/application/MyCommandlineRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/vaadin/src/main/java/com/accarda/panicPoc/vaadin/MyCommandlineRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +152,7 @@
       <workItem from="1594025056003" duration="1260000" />
       <workItem from="1594026420210" duration="931000" />
       <workItem from="1594027422553" duration="1254000" />
-      <workItem from="1594031460075" duration="2987000" />
+      <workItem from="1594031460075" duration="3715000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1594031975829</created>
@@ -180,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594034887831</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Design overview Word">
+      <created>1594034966287</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594034966287</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,10 +239,10 @@
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1168@0.0.1920.1168" timestamp="1593086893986" />
-    <state x="458" y="175" key="CommitChangelistDialog2" timestamp="1594034897782">
+    <state x="458" y="175" key="CommitChangelistDialog2" timestamp="1594034965333">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="458" y="175" key="CommitChangelistDialog2/0.0.1920.1168@0.0.1920.1168" timestamp="1594034897782" />
+    <state x="458" y="175" key="CommitChangelistDialog2/0.0.1920.1168@0.0.1920.1168" timestamp="1594034965333" />
     <state x="740" y="269" key="FileChooserDialogImpl" timestamp="1594031293752">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
@@ -299,10 +308,10 @@
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="440" y="158" key="SettingsEditor/0.0.1920.1168@0.0.1920.1168" timestamp="1594031378097" />
-    <state x="552" y="304" key="Vcs.Push.Dialog.v2" timestamp="1594034916575">
+    <state x="552" y="304" key="Vcs.Push.Dialog.v2" timestamp="1594034968002">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="552" y="304" key="Vcs.Push.Dialog.v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594034916575" />
+    <state x="552" y="304" key="Vcs.Push.Dialog.v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594034968002" />
     <state x="666" y="318" key="VcsDiffUtil.ChangesDialog" timestamp="1594032340259">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
@@ -332,17 +341,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/application/persistence/implementation/DocumentHandlerService.java</url>
+          <url>file://$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/vaadin/persistence/implementation/DocumentHandlerService.java</url>
           <line>25</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/application/persistence/implementation/DocumentHandlerService.java</url>
+          <url>file://$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/vaadin/persistence/implementation/DocumentHandlerService.java</url>
           <line>47</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/application/persistence/implementation/DocumentHandlerService.java</url>
+          <url>file://$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/vaadin/persistence/implementation/DocumentHandlerService.java</url>
           <line>49</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
