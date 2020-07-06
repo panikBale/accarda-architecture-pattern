@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="vaadin" />
         <module name="common" />
-        <module name="businessLogic" />
         <module name="camunda" />
       </profile>
     </annotationProcessing>

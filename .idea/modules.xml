@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/accarda-architecture-pattern.iml" filepath="$PROJECT_DIR$/.idea/accarda-architecture-pattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/businessLogic/businessLogic.iml" filepath="$PROJECT_DIR$/businessLogic/businessLogic.iml" />
       <module fileurl="file://$PROJECT_DIR$/camunda/camunda.iml" filepath="$PROJECT_DIR$/camunda/camunda.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/vaadin/vaadin.iml" filepath="$PROJECT_DIR$/vaadin/vaadin.iml" />
