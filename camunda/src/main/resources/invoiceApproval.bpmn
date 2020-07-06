@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="_DdZocL47EeOQo_IRkjDF6w" targetNamespace="http://camunda.org/schema/1.0/bpmn" exporter="Camunda Modeler" exporterVersion="4.0.0" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:collaboration id="Collaboration_01ezgs4">
+    <bpmn2:participant id="Participant_09nio5d" name="invoice Approval" processRef="InvoiceApproval" />
+    <bpmn2:participant id="Participant_0yq9ilz" name="Invoice Reader" processRef="InvoiceReader" />
+    <bpmn2:messageFlow id="Flow_1h3js18" name="InvoiceProcessInvoker" sourceRef="Activity_00hy6wc" targetRef="Participant_09nio5d" />
+  </bpmn2:collaboration>
+  <bpmn2:process id="InvoiceApproval" name="Invoice Approval" isExecutable="true">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>SequenceFlow_1</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:endEvent id="EndEvent_1">
+      <bpmn2:incoming>Flow_1rce1su</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:task id="Activity_1dt8joh" name="book">
+      <bpmn2:incoming>Flow_0h22tcv</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1rce1su</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="Activity_079g6ls" name="signoff 2">
+      <bpmn2:incoming>Flow_16p2c3e</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0h22tcv</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="Activity_1ss3b11" name="signoff 1">
+      <bpmn2:incoming>Flow_0tg5rzm</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_16p2c3e</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="SequenceFlow_1" name="" sourceRef="StartEvent_1" targetRef="Activity_0ozu8uh" />
+    <bpmn2:sequenceFlow id="SequenceFlow_0oy9c54" sourceRef="Task_0dfv74n" targetRef="Activity_013mdf9" />
+    <bpmn2:sequenceFlow id="Flow_0tg5rzm" sourceRef="Activity_013mdf9" targetRef="Activity_1ss3b11" />
+    <bpmn2:sequenceFlow id="Flow_16p2c3e" sourceRef="Activity_1ss3b11" targetRef="Activity_079g6ls" />
+    <bpmn2:sequenceFlow id="Flow_0h22tcv" sourceRef="Activity_079g6ls" targetRef="Activity_1dt8joh" />
+    <bpmn2:sequenceFlow id="Flow_1rce1su" sourceRef="Activity_1dt8joh" targetRef="EndEvent_1" />
+    <bpmn2:sequenceFlow id="Flow_062wrwl" sourceRef="Activity_0ozu8uh" targetRef="Task_0dfv74n" />
+    <bpmn2:serviceTask id="Activity_0ozu8uh" name="Update Invoice with processInstanceId" camunda:delegateExpression="${invoiceUpdaterProcessInstanceIdService}">
+      <bpmn2:incoming>SequenceFlow_1</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_062wrwl</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:userTask id="Task_0dfv74n" name="Invoice overview">
+      <bpmn2:incoming>Flow_062wrwl</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0oy9c54</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:task id="Activity_013mdf9" name="approve">
+      <bpmn2:incoming>SequenceFlow_0oy9c54</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0tg5rzm</bpmn2:outgoing>
+    </bpmn2:task>
+  </bpmn2:process>
+  <bpmn2:process id="InvoiceReader" name="Invoice Reader" isExecutable="true">
+    <bpmn2:serviceTask id="Activity_00hy6wc" name="mark invoices as imported" camunda:delegateExpression="${invoiceUpdaterReadDoneService}">
+      <bpmn2:incoming>Flow_1we6u0n</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0l8nnik</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:endEvent id="Event_1rpr67p">
+      <bpmn2:incoming>Flow_0l8nnik</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:startEvent id="Event_0dhnjgm">
+      <bpmn2:outgoing>Flow_0i5tcb2</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="Flow_0i5tcb2" sourceRef="Event_0dhnjgm" targetRef="Activity_0o92pua" />
+    <bpmn2:sequenceFlow id="Flow_1we6u0n" sourceRef="Activity_0o92pua" targetRef="Activity_00hy6wc" />
+    <bpmn2:sequenceFlow id="Flow_0l8nnik" sourceRef="Activity_00hy6wc" targetRef="Event_1rpr67p" />
+    <bpmn2:serviceTask id="Activity_0o92pua" name="import invoices" camunda:delegateExpression="${invoiceReaderService}">
+      <bpmn2:incoming>Flow_0i5tcb2</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_1we6u0n</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_01ezgs4">
+      <bpmndi:BPMNShape id="Participant_09nio5d_di" bpmnElement="Participant_09nio5d" isHorizontal="true">
+        <dc:Bounds x="140" y="270" width="1240" height="160" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_062wrwl_di" bpmnElement="Flow_062wrwl">
+        <di:waypoint x="360" y="350" />
+        <di:waypoint x="410" y="350" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1rce1su_di" bpmnElement="Flow_1rce1su">
+        <di:waypoint x="1141" y="350" />
+        <di:waypoint x="1303" y="350" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0h22tcv_di" bpmnElement="Flow_0h22tcv">
+        <di:waypoint x="981" y="350" />
+        <di:waypoint x="1041" y="350" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_16p2c3e_di" bpmnElement="Flow_16p2c3e">
+        <di:waypoint x="821" y="350" />
+        <di:waypoint x="881" y="350" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0tg5rzm_di" bpmnElement="Flow_0tg5rzm">
+        <di:waypoint x="670" y="350" />
+        <di:waypoint x="721" y="350" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0oy9c54_di" bpmnElement="SequenceFlow_0oy9c54">
+        <di:waypoint x="510" y="350" />
+        <di:waypoint x="570" y="350" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="441.5" y="161" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="_BPMNShape_StartEvent_3" targetElement="Activity_0c7bqtv_di">
+        <di:waypoint x="227" y="350" />
+        <di:waypoint x="260" y="350" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="240" y="157" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_3" bpmnElement="StartEvent_1">
+        <dc:Bounds x="191" y="332" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="196" y="598" width="69" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_EndEvent_3" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1303" y="332" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1308" y="598" width="69" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1al4oyo_di" bpmnElement="Activity_1dt8joh">
+        <dc:Bounds x="1041" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ardzl6_di" bpmnElement="Activity_079g6ls">
+        <dc:Bounds x="881" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0krg4za_di" bpmnElement="Activity_1ss3b11">
+        <dc:Bounds x="721" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0c7bqtv_di" bpmnElement="Activity_0ozu8uh">
+        <dc:Bounds x="260" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1p2516k_di" bpmnElement="Task_0dfv74n">
+        <dc:Bounds x="410" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1cmben8_di" bpmnElement="Activity_013mdf9">
+        <dc:Bounds x="570" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_0yq9ilz_di" bpmnElement="Participant_0yq9ilz" isHorizontal="true">
+        <dc:Bounds x="140" y="40" width="1240" height="180" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0l8nnik_di" bpmnElement="Flow_0l8nnik">
+        <di:waypoint x="840" y="140" />
+        <di:waypoint x="942" y="140" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1we6u0n_di" bpmnElement="Flow_1we6u0n">
+        <di:waypoint x="670" y="140" />
+        <di:waypoint x="740" y="140" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0i5tcb2_di" bpmnElement="Flow_0i5tcb2">
+        <di:waypoint x="468" y="140" />
+        <di:waypoint x="570" y="140" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Activity_0ugscce_di" bpmnElement="Activity_00hy6wc">
+        <dc:Bounds x="740" y="100" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1rpr67p_di" bpmnElement="Event_1rpr67p">
+        <dc:Bounds x="942" y="122" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0jch7r3_di" bpmnElement="Event_0dhnjgm">
+        <dc:Bounds x="432" y="122" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1xctvxh_di" bpmnElement="Activity_0o92pua">
+        <dc:Bounds x="570" y="100" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1h3js18_di" bpmnElement="Flow_1h3js18">
+        <di:waypoint x="798" y="180" />
+        <di:waypoint x="798" y="270" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="772" y="222" width="84" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>
