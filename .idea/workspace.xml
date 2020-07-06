@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c1f9fcb-3a57-495c-b28a-b5b2c7173065" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/accarda-architecture-pattern-overview.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1c1f9fcb-3a57-495c-b28a-b5b2c7173065" name="Default Changelist" comment="Design overview Word">
       <change beforePath="$PROJECT_DIR$/common" beforeDir="false" afterPath="$PROJECT_DIR$/common" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +150,7 @@
       <workItem from="1594025056003" duration="1260000" />
       <workItem from="1594026420210" duration="931000" />
       <workItem from="1594027422553" duration="1254000" />
-      <workItem from="1594031460075" duration="2665000" />
+      <workItem from="1594031460075" duration="2987000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1594031975829</created>
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594032546001</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Design overview Word">
+      <created>1594034887831</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594034887831</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +202,8 @@
       <path value="$PROJECT_DIR$/common" />
     </ignored-roots>
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Design overview Word" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design overview Word" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="447" key="#Notifications" timestamp="1594031042773">
@@ -224,10 +230,10 @@
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1168@0.0.1920.1168" timestamp="1593086893986" />
-    <state x="458" y="175" key="CommitChangelistDialog2" timestamp="1594032545095">
+    <state x="458" y="175" key="CommitChangelistDialog2" timestamp="1594034897782">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="458" y="175" key="CommitChangelistDialog2/0.0.1920.1168@0.0.1920.1168" timestamp="1594032545095" />
+    <state x="458" y="175" key="CommitChangelistDialog2/0.0.1920.1168@0.0.1920.1168" timestamp="1594034897782" />
     <state x="740" y="269" key="FileChooserDialogImpl" timestamp="1594031293752">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
@@ -293,10 +299,10 @@
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="440" y="158" key="SettingsEditor/0.0.1920.1168@0.0.1920.1168" timestamp="1594031378097" />
-    <state x="552" y="304" key="Vcs.Push.Dialog.v2" timestamp="1594032548501">
+    <state x="552" y="304" key="Vcs.Push.Dialog.v2" timestamp="1594034916575">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="552" y="304" key="Vcs.Push.Dialog.v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594032548501" />
+    <state x="552" y="304" key="Vcs.Push.Dialog.v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594034916575" />
     <state x="666" y="318" key="VcsDiffUtil.ChangesDialog" timestamp="1594032340259">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
