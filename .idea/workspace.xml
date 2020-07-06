@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1c1f9fcb-3a57-495c-b28a-b5b2c7173065" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/doc/accarda-architecture-pattern-overview.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common" beforeDir="false" afterPath="$PROJECT_DIR$/common" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +152,7 @@
       <workItem from="1594025056003" duration="1260000" />
       <workItem from="1594026420210" duration="931000" />
       <workItem from="1594027422553" duration="1254000" />
-      <workItem from="1594031460075" duration="1010000" />
+      <workItem from="1594031460075" duration="2665000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1594031975829</created>
@@ -148,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594032193122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1594032546001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594032546001</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1168@0.0.1920.1168" timestamp="1593086893986" />
-    <state x="458" y="175" key="CommitChangelistDialog2" timestamp="1594032191779">
+    <state x="458" y="175" key="CommitChangelistDialog2" timestamp="1594032545095">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="458" y="175" key="CommitChangelistDialog2/0.0.1920.1168@0.0.1920.1168" timestamp="1594032191779" />
+    <state x="458" y="175" key="CommitChangelistDialog2/0.0.1920.1168@0.0.1920.1168" timestamp="1594032545095" />
     <state x="740" y="269" key="FileChooserDialogImpl" timestamp="1594031293752">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
@@ -266,18 +293,18 @@
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="440" y="158" key="SettingsEditor/0.0.1920.1168@0.0.1920.1168" timestamp="1594031378097" />
-    <state x="552" y="304" key="Vcs.Push.Dialog.v2" timestamp="1594032228089">
+    <state x="552" y="304" key="Vcs.Push.Dialog.v2" timestamp="1594032548501">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="552" y="304" key="Vcs.Push.Dialog.v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594032228089" />
+    <state x="552" y="304" key="Vcs.Push.Dialog.v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594032548501" />
     <state x="666" y="318" key="VcsDiffUtil.ChangesDialog" timestamp="1594032340259">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="666" y="318" key="VcsDiffUtil.ChangesDialog/0.0.1920.1168@0.0.1920.1168" timestamp="1594032340259" />
-    <state x="769" y="498" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594032343763">
+    <state x="769" y="498" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594032555000">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="769" y="498" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594032343763" />
+    <state x="769" y="498" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594032555000" />
     <state x="700" y="327" width="704" height="592" key="find.popup" timestamp="1594026156743">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
