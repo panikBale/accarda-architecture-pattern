@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="accarda-architecture-pattern" />
+      <module name="camunda" />
+      <module name="common" />
+      <module name="vaadin" />
+    </loaded-modules>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,27 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c1f9fcb-3a57-495c-b28a-b5b2c7173065" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/frontend/src/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/frontend/styles/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/frontend/styles/shared-styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/frontend/styles/vaadin-text-field-styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/src/main/java/com/accarda/panicPoc/vaadin/MyCommandlineRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/src/main/resources/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/src/main/resources/META-INF/resources/icons/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/src/main/resources/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/businessLogic/webpack.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common" beforeDir="false" afterPath="$PROJECT_DIR$/common" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vaadin/src/main/java/com/accarda/panicPoc/vaadin/MyCommandlineRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/vaadin/src/main/java/com/accarda/panicPoc/vaadin/MyCommandlineRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +67,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CamundaVaadinPostgres/Vaading_Common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com/accarda/panicPoc/common" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -91,6 +80,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\panik\dev\Projects\accarda-architecture-pattern\common\src\main\java\com\accarda\panicPoc\common" />
       <recent name="C:\panik\dev\Projects\AccardaArchitecturePattern" />
     </key>
   </component>
@@ -170,7 +160,8 @@
       <workItem from="1594025056003" duration="1260000" />
       <workItem from="1594026420210" duration="931000" />
       <workItem from="1594027422553" duration="1254000" />
-      <workItem from="1594031460075" duration="4149000" />
+      <workItem from="1594031460075" duration="4257000" />
+      <workItem from="1594036680537" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1594031975829</created>
@@ -214,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594036153675</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactoring delete businessLogic module, delete persistence package in common module">
+      <created>1594036615262</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594036615262</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +228,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -238,7 +237,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="Design overview Word" />
     <MESSAGE value="vaadin component refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="vaadin component refactoring" />
+    <MESSAGE value="refactoring delete businessLogic module, delete persistence package in common module" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring delete businessLogic module, delete persistence package in common module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="447" key="#Notifications" timestamp="1594031042773">
@@ -265,10 +265,10 @@
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1168@0.0.1920.1168" timestamp="1593086893986" />
-    <state x="458" y="175" key="CommitChangelistDialog2" timestamp="1594036152652">
+    <state x="458" y="175" key="CommitChangelistDialog2" timestamp="1594036614210">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="458" y="175" key="CommitChangelistDialog2/0.0.1920.1168@0.0.1920.1168" timestamp="1594036152652" />
+    <state x="458" y="175" key="CommitChangelistDialog2/0.0.1920.1168@0.0.1920.1168" timestamp="1594036614210" />
     <state x="740" y="269" key="FileChooserDialogImpl" timestamp="1594036223065">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
@@ -334,10 +334,10 @@
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
     <state x="440" y="158" key="SettingsEditor/0.0.1920.1168@0.0.1920.1168" timestamp="1594031378097" />
-    <state x="552" y="304" key="Vcs.Push.Dialog.v2" timestamp="1594036157897">
+    <state x="552" y="304" key="Vcs.Push.Dialog.v2" timestamp="1594036616939">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
-    <state x="552" y="304" key="Vcs.Push.Dialog.v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594036157897" />
+    <state x="552" y="304" key="Vcs.Push.Dialog.v2/0.0.1920.1168@0.0.1920.1168" timestamp="1594036616939" />
     <state x="666" y="318" key="VcsDiffUtil.ChangesDialog" timestamp="1594032340259">
       <screen x="0" y="0" width="1920" height="1168" />
     </state>
